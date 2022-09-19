@@ -11,6 +11,8 @@ WebDriver driver;
 		driver=BrowserFactory.startApplication(driver, "Chrome", "https://www.spicejet.com/");
 	}
 	
-	
-	
+	public void signinToApplication() {
+		
+	}
 }
+
