@@ -9,10 +9,12 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(features="Features",
                  glue={"com.testNGappTestcases"},
-                 plugin="pretty",
-               tags ="not @Login",
+                 
+               tags ="@Login",
+               plugin= {"pretty","json:target/MyReports/report.json","junit:target/MyReports/report.xml"},
                  monochrome=true,
-                 dryRun=true
+                 //dryRun=true,
+                 publish=true
                  
                  
 )
