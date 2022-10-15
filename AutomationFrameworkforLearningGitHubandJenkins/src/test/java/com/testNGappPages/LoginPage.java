@@ -28,6 +28,7 @@ public class LoginPage {
 @FindBy(xpath="//div[contains(text(),'LOGIN')]/parent::div")  WebElement enterlogin;
 
 
+
 public void clickonLoginButton() {
 	LoginButton.click();
 }
